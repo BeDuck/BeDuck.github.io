@@ -13,8 +13,8 @@
 }(this, function() {
 	'use strict';
 	var candidates_all=[];
-	for (var n = 123; n <= 987; n++) {
-		var valid = true;
+	for (var n0 = 123; n0 <= 987; n0++) {
+		var n = n0, valid = true;
 		for (var i = 0; i < 2; i++) {
 			var c = n.charAt(i);
 			if (n.indexOf(c) != n.lastIndexOf(c)) {
@@ -22,7 +22,7 @@
 				break;
 			}
 		}
-		for (var i = 0; i < 2; i++) {
+    for (var i = 0; i < 2; i++) {
 			var c = n.charAt(i);
 			if (c == 48) {
 				valid = false;
