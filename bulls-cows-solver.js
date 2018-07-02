@@ -21,7 +21,7 @@
 				valid = false;
 				break;
 			}
-			if (c == '0') {
+			if (c == "0") {
 				valid = false;
 				break;
 			}
