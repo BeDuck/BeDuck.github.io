@@ -22,6 +22,13 @@
 				break;
 			}
 		}
+		for (var i = 0; i < 2; i++) {
+			var c = n.charAt(i);
+			if (c == 48) {
+				valid = false;
+				break;
+			}
+		}
 		if (valid) {
 			candidates_all.push(n);
 		}
