@@ -22,8 +22,8 @@
 				break;
 			}
 		}
-    for (var i = 0; i < 2; i++) {
-			var c = n.charAt(i);
+    for (var i = 0; i < 3; i++) {
+			var c = n.value.charAt(i);
 			if (c == 0) {
 				valid = false;
 				break;
