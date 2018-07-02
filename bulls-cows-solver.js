@@ -21,10 +21,7 @@
 				valid = false;
 				break;
 			}
-		}
-    for (var j = 0; j < 2; j++) {
-			var d = n.charAt(j);
-			if (d == 0) {
+			if (c == 0) {
 				valid = false;
 				break;
 			}
@@ -38,8 +35,7 @@
 		var validResults = [
 			'0A0B', '0A1B', '0A2B', '0A3B',
 			'1A0B', '1A1B', '1A2B',
-			'2A0B', '2A1B',
-			'3A0B'
+			'2A0B', '2A1B', '3A0B'
 		];
 		if (!/^\d{3}$/.test(guess)) {
 			return false;
