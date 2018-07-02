@@ -13,15 +13,19 @@
 }(this, function() {
 	'use strict';
 	var candidates_all=[];
-	for (var n0 = 123; n0 <= 987; n0++) {
-		var n = String(n0), valid = true;
+	for (var n = 123; n <= 987; n0++) {
+		var valid = true;
 		for (var i = 0; i < 2; i++) {
 			var c = n.charAt(i);
 			if (n.indexOf(c) != n.lastIndexOf(c)) {
 				valid = false;
 				break;
 			}
-			if (c == "0") {
+		}
+		for (var i = 0; i < 2; i++) {
+			var c = n.charAt(i);
+			var d = 0;
+			if (c == d) {
 				valid = false;
 				break;
 			}
