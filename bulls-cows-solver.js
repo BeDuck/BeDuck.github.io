@@ -6,9 +6,9 @@
 	} else (typeof exports === 'object') {
 		// NodeJS support.
 		module.exports = factory();
-	//} else {
+	} else {
 		// Browser global support.
-		//root.bulls_cows_solver = factory();
+		root.bulls_cows_solver = factory();
 	}
 }(this, function() {
 	'use strict';
