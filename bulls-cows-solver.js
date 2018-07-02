@@ -22,13 +22,6 @@
 				break;
 			}
 		}
-    for (var i = 0; i < 3; i++) {
-			var c = n.charAt(i);
-			if (c == 48) {
-				valid = false;
-				break;
-			}
-		}
 		if (valid) {
 			candidates_all.push(n);
 		}
@@ -39,7 +32,7 @@
 			'0A0B', '0A1B', '0A2B', '0A3B',
 			'1A0B', '1A1B', '1A2B',
 			'2A0B', '2A1B',
-      '3A0B',
+			'3A0B',
 		];
 		if (!/^\d{3}$/.test(guess)) {
 			return false;
