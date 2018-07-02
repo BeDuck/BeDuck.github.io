@@ -24,7 +24,7 @@
 		}
     for (var i = 0; i < 2; i++) {
 			var c = n.charAt(i);
-			if (c == 0) {
+			if (c == '0') {
 				valid = false;
 				break;
 			}
