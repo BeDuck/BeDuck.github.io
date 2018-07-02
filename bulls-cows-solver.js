@@ -34,7 +34,7 @@
 			'2A0B', '2A1B',
       '3A0B',
 		];
-		if (!/^\d{4}$/.test(guess)) {
+		if (!/^\d{3}$/.test(guess)) {
 			return false;
 		}
 		for (var i = 0; i < 3; i++) {
