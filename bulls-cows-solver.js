@@ -24,7 +24,7 @@
 		}
     for (var i = 0; i < 3; i++) {
 			var c = n.value.charAt(i);
-			if (c == 0) {
+			if (c == 48) {
 				valid = false;
 				break;
 			}
