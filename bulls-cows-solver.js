@@ -14,10 +14,17 @@
 	'use strict';
 	var candidates_all=[];
 	for (var n0 = 123; n0 <= 987; n0++) {
-		var n = ('0'+n0).substr(-3), valid = true;
-		for (var i = 0; i < 3; i++) {
+		var n = n0, valid = true;
+		for (var i = 0; i < 2; i++) {
 			var c = n.charAt(i);
 			if (n.indexOf(c) != n.lastIndexOf(c)) {
+				valid = false;
+				break;
+			}
+		}
+    for (var i = 0; i < 2; i++) {
+			var c = n.charAt(i);
+			if (c == 0) {
 				valid = false;
 				break;
 			}
@@ -37,7 +44,7 @@
 		if (!/^\d{3}$/.test(guess)) {
 			return false;
 		}
-		for (var i = 0; i < 3; i++) {
+		for (var i = 0; i < 2; i++) {
 			var c = guess.charAt(i);
 			if (guess.indexOf(c) != guess.lastIndexOf(c)) {
 				return false;
