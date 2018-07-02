@@ -22,13 +22,6 @@
 				break;
 			}
 		}
-    for (var j = 0; j < 2; j++) {
-			var d = n.charAt(j);
-			if (Number(d) == 0) {
-				valid = false;
-				break;
-			}
-		}
 		if (valid) {
 			candidates_all.push(n);
 		}
