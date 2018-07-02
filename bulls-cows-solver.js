@@ -14,7 +14,7 @@
 	'use strict';
 	var candidates_all=[];
 	for (var n0 = 123; n0 <= 987; n0++) {
-		var n = n0, valid = true;
+		var n = String(n0), valid = true;
 		for (var i = 0; i < 2; i++) {
 			var c = n.charAt(i);
 			if (n.indexOf(c) != n.lastIndexOf(c)) {
