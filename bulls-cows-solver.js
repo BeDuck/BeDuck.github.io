@@ -13,8 +13,8 @@
 }(this, function() {
 	'use strict';
 	var candidates_all=[];
-	for (var n0 = 123; n0 <= 9876; n0++) {
-		var n = ('0'+n0).substr(-4), valid = true;
+	for (var n0 = 123; n0 <= 987; n0++) {
+		var n = ('0'+n0).substr(-3), valid = true;
 		for (var i = 0; i < 3; i++) {
 			var c = n.charAt(i);
 			if (n.indexOf(c) != n.lastIndexOf(c)) {
@@ -29,10 +29,10 @@
 
 	var isValidInput = function(guess, result) {
 		var validResults = [
-			'0A0B', '0A1B', '0A2B', '0A3B', '0A4B',
-			'1A0B', '1A1B', '1A2B', '1A3B',
-			'2A0B', '2A1B', '2A2B', '3A0B',
-			'4A0B',
+			'0A0B', '0A1B', '0A2B', '0A3B',
+			'1A0B', '1A1B', '1A2B',
+			'2A0B', '2A1B',
+      '3A0B',
 		];
 		if (!/^\d{4}$/.test(guess)) {
 			return false;
@@ -50,11 +50,11 @@
 	}
     var compare = function(n0,n1){
 		var i, j, a=0, b=0;
-		for (i = 0; i < 4; i++) {
+		for (i = 0; i < 3; i++) {
 			if (n0.charAt(i) == n1.charAt(i)) {
 				a++;
 			} else {
-				for (j = 0; j < 4; j++) {
+				for (j = 0; j < 3; j++) {
 					if (i != j && n0.charAt(i) == n1.charAt(j)) {
 						b++;
 					}
