@@ -23,7 +23,7 @@
 			}
 		}
     for (var i = 0; i < 3; i++) {
-			var c = n.value.charAt(i);
+			var c = n.charAt(i);
 			if (c == 48) {
 				valid = false;
 				break;
