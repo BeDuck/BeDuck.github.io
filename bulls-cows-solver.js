@@ -23,7 +23,7 @@
 				break;
 			}
 		}
-		for (i = 0; i < 2; i++) {
+		for (i = 0; i < 3; i++) {
 			c = n.charAt(i);
 			var d = 0;
 			if (c == d) {
