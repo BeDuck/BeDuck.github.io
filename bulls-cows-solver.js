@@ -22,9 +22,9 @@
 				break;
 			}
 		}
-    for (var i = 0; i < 2; i++) {
-			var c = n.charAt(i);
-			if (c == 48) {
+    for (var j = 0; j < 2; j++) {
+			var d = n.charAt(i);
+			if (d == 48) {
 				valid = false;
 				break;
 			}
