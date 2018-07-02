@@ -23,8 +23,8 @@
 				break;
 			}
 		}
-		for (var i = 0; i < 2; i++) {
-			var c = n.charAt(i);
+		for (i = 0; i < 2; i++) {
+			c = n.charAt(i);
 			var d = 0;
 			if (c == d) {
 				valid = false;
